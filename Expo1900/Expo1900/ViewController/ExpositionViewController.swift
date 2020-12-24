@@ -81,4 +81,8 @@ class ExpositionViewController: UITableViewController {
         
         return height
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
