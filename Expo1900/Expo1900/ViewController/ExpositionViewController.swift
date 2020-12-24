@@ -10,7 +10,9 @@ class ExpositionViewController: UITableViewController {
     @IBOutlet weak var descriptionTextLabel: UILabel!
     
     var expositionData: Exposition?
-
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -70,10 +72,12 @@ class ExpositionViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
+        appDelegate.canAllOrientation = false
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
+        appDelegate.canAllOrientation = true
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
