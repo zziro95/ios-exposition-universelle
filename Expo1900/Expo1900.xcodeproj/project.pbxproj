@@ -17,6 +17,7 @@
 		E229149F2591B40200827F12 /* ExpositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229149E2591B40200827F12 /* ExpositionViewController.swift */; };
 		E22914A32591E56000827F12 /* KoreanEntriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22914A22591E55F00827F12 /* KoreanEntriesListViewController.swift */; };
 		E22914A62591E5E400827F12 /* KoreanEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22914A52591E5E400827F12 /* KoreanEntryViewController.swift */; };
+		E22914AC2594C69700827F12 /* KoreanEntriesDynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22914AB2594C69500827F12 /* KoreanEntriesDynamicTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E229149E2591B40200827F12 /* ExpositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionViewController.swift; sourceTree = "<group>"; };
 		E22914A22591E55F00827F12 /* KoreanEntriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntriesListViewController.swift; sourceTree = "<group>"; };
 		E22914A52591E5E400827F12 /* KoreanEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryViewController.swift; sourceTree = "<group>"; };
+		E22914AB2594C69500827F12 /* KoreanEntriesDynamicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntriesDynamicTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				C79FF4BD2589F404005FB0FD /* Assets.xcassets */,
 				C79FF4BF2589F404005FB0FD /* LaunchScreen.storyboard */,
 				C79FF4C22589F404005FB0FD /* Info.plist */,
+				E22914AA2594C66300827F12 /* CustomCell */,
 				E229148F25903EE000827F12 /* ExpoModel */,
 			);
 			path = Expo1900;
@@ -93,6 +96,14 @@
 				E22914A52591E5E400827F12 /* KoreanEntryViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E22914AA2594C66300827F12 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				E22914AB2594C69500827F12 /* KoreanEntriesDynamicTableViewCell.swift */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				E2291494259044B900827F12 /* KoreanEntries.swift in Sources */,
 				E22914A32591E56000827F12 /* KoreanEntriesListViewController.swift in Sources */,
 				E229149F2591B40200827F12 /* ExpositionViewController.swift in Sources */,
+				E22914AC2594C69700827F12 /* KoreanEntriesDynamicTableViewCell.swift in Sources */,
 				E229149125903F8300827F12 /* Exposition.swift in Sources */,
 				C79FF4B52589F401005FB0FD /* AppDelegate.swift in Sources */,
 				C79FF4B72589F401005FB0FD /* SceneDelegate.swift in Sources */,

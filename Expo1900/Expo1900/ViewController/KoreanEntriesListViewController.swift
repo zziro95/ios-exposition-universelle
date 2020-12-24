@@ -41,16 +41,22 @@ class KoreanEntriesListViewController: UITableViewController {
         return self.koreanEntries.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {//UITableViewCell KoreanEntriesDynamicTableViewCell
+        let cell: KoreanEntriesDynamicTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! KoreanEntriesDynamicTableViewCell
         
         let entry: KoreanEntries = self.koreanEntries[indexPath.row]
-
-        cell.imageView?.image = entry.image
-        cell.textLabel?.text = entry.name
-        cell.detailTextLabel?.text = entry.shortDescriptions
+        
+        cell.testImageView.image = entry.image
+        cell.nameTextLabel.text = entry.name
+        cell.shortDescriptionTextLabel.text = entry.shortDescriptions
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let height = UITableView.automaticDimension
+        
+        return height
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
