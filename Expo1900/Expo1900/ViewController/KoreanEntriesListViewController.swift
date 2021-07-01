@@ -46,7 +46,7 @@ class KoreanEntriesListViewController: UITableViewController {
         
         let entry: KoreanEntries = self.koreanEntries[indexPath.row]
         
-        cell.testImageView.image = entry.image
+        cell.koreanEntriyImageView.image = entry.image
         cell.nameTextLabel.text = entry.name
         cell.shortDescriptionTextLabel.text = entry.shortDescriptions
         

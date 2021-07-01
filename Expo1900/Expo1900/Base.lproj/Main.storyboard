@@ -231,33 +231,47 @@
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="130"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Huq-0P-hox">
-                                            <rect key="frame" x="30" y="30" width="177.66666666666666" height="70"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RY-x6-9Ch">
-                                            <rect key="frame" x="242.66666666666663" y="65.666666666666671" width="51" height="24"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Huq-0P-hox">
+                                            <rect key="frame" x="5" y="15" width="100" height="100"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="24" id="APK-Zt-uMD"/>
+                                                <constraint firstAttribute="width" constant="100" id="Lmc-0j-etr"/>
+                                                <constraint firstAttribute="width" secondItem="Huq-0P-hox" secondAttribute="height" multiplier="1:1" id="OaO-We-DKw"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="shortDescription" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3I-Jn-Zay">
-                                            <rect key="frame" x="242.66666666666666" y="109.66666666666669" width="127.33333333333334" height="20.333333333333314"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mAp-li-yGl">
+                                            <rect key="frame" x="110" y="35" width="275" height="60"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpB-85-PTy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="275" height="33.666666666666664"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="shortdescription" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kC7-Lp-vJ1">
+                                                    <rect key="frame" x="0.0" y="33.666666666666671" width="275" height="26.333333333333329"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="mAp-li-yGl" secondAttribute="trailing" constant="5" id="0Nm-0K-Bz2"/>
+                                        <constraint firstItem="mAp-li-yGl" firstAttribute="leading" secondItem="Huq-0P-hox" secondAttribute="trailing" constant="5" id="6HZ-y8-eC7"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mAp-li-yGl" secondAttribute="bottom" constant="5" id="Hha-L8-FPx"/>
+                                        <constraint firstItem="mAp-li-yGl" firstAttribute="centerY" secondItem="sma-id-tTm" secondAttribute="centerY" id="Phu-3k-YrT"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Huq-0P-hox" secondAttribute="bottom" constant="5" id="a6m-PF-opE"/>
+                                        <constraint firstItem="Huq-0P-hox" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sma-id-tTm" secondAttribute="top" constant="5" id="bb9-Hx-guG"/>
+                                        <constraint firstItem="mAp-li-yGl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sma-id-tTm" secondAttribute="top" constant="5" id="poE-jp-F8T"/>
+                                        <constraint firstItem="Huq-0P-hox" firstAttribute="centerY" secondItem="sma-id-tTm" secondAttribute="centerY" id="x4m-BI-BYv"/>
+                                        <constraint firstItem="Huq-0P-hox" firstAttribute="leading" secondItem="sma-id-tTm" secondAttribute="leading" constant="5" id="xF7-UD-3xw"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imageView" destination="Huq-0P-hox" id="PQm-ra-EKg"/>
-                                    <outlet property="nameTextLabel" destination="1RY-x6-9Ch" id="3xM-fs-N5P"/>
-                                    <outlet property="shortDescriptionTextLabel" destination="d3I-Jn-Zay" id="gb0-wk-MPO"/>
-                                    <outlet property="testImageView" destination="Huq-0P-hox" id="HfP-7H-TUc"/>
+                                    <outlet property="koreanEntriyImageView" destination="Huq-0P-hox" id="b5H-wC-pel"/>
+                                    <outlet property="nameTextLabel" destination="fpB-85-PTy" id="LL5-bi-vND"/>
+                                    <outlet property="shortDescriptionTextLabel" destination="kC7-Lp-vJ1" id="9Wf-4b-d6f"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

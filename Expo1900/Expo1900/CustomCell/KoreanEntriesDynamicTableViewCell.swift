@@ -2,7 +2,7 @@ import UIKit
 
 class KoreanEntriesDynamicTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var testImageView: UIImageView!
+    @IBOutlet weak var koreanEntriyImageView: UIImageView!
     @IBOutlet weak var nameTextLabel: UILabel!
     @IBOutlet weak var shortDescriptionTextLabel: UILabel!
     
