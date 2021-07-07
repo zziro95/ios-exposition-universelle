@@ -1,6 +1,6 @@
 # 만국박람회 프로젝트
 - 프로젝트 기간: 2020.12.21 ~ 2020.12.27    
-- 팀 프로젝트 : [찌로](https://github.com/zziro95) / [그린](https://github.com/GREENOVER) man_technologist::man_technologist:    
+- 팀 프로젝트 : [찌로](https://github.com/zziro95) / [그린](https://github.com/GREENOVER) :man_technologist::man_technologist:    
 - [팀 그라운드 룰](https://github.com/zziro95/ios-exposition-universelle/blob/step3/GroundRule.md)   
 ---
 ## 구현된 기능
