@@ -12,7 +12,7 @@
 - 테이블 뷰의 셀 선택 시 데이터를 넘겨줌과 함께 화면 전환
 <br>
 
-<img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/appgif.gif" width="70%" height="70%" title="appgif" alt="appgif"></img> <br>
+<img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/appgif.gif" width="20%" height="20%" title="appgif" alt="appgif"></img> <br>
 
 ---
 ## 🎯 트러블 슈팅
@@ -61,9 +61,11 @@
         - 표의 레이아웃이 변경되지 않을 경우에 사용합니다.   
 - 해결 방안
     - 첫 번째 화면과, 세 번째 화면의 경우 보여줘야 하는 셀의 수와 구조가 정해져 있기 때문에 `Static Cells` 타입을 선택했고, 두 번째 화면 같은 경우 여러 셀이 동일한 레이아웃을 사용하기 때문에 `Dynamic Prototypes` 타입을 선택하였습니다.   
-|첫 번째 뷰|세 번째 뷰|두 번째 뷰|
-|---|---|---|
-|<img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/firstView.png" width="70%" height="70%" title="firstView" alt="firstView"></img>|<img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/thirdView.png" width="70%" height="70%" title="thirdView" alt="thirdView"></img>|<img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/secondView.png" width="70%" height="70%" title="secondView" alt="secondView"></img>|   
+
+| 첫 번째 뷰 | 세 번째 뷰 | 두 번째 뷰 |
+| --- | --- | --- |
+| <img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/firstView.png" width="200" height="300" title="firstView" alt="firstView"></img> | <img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/thirdView.png" width="200" height="300" title="thirdView" alt="thirdView"></img> | <img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/secondView.png" width="200" height="300" title="secondView" alt="secondView"></img> |   
+
 <br>
 
 ### 3. 화면전환 시 데이터 넘겨주는 방법
