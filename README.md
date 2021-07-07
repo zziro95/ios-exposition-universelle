@@ -12,10 +12,10 @@
 - 테이블 뷰의 셀 선택 시 데이터를 넘겨줌과 함께 화면 전환
 <br>
 
-<img src="https://github.com/zziro95/zzipository/blob/main/images/appgif.gif" width="70%" height="70%" title="appgif" alt="appgif"></img> <br>
+<img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/appgif.gif" width="70%" height="70%" title="appgif" alt="appgif"></img> <br>
 
 ---
-## 트러블 슈팅
+## 🎯 트러블 슈팅
 ### 1. 디코딩 시 발생하는 여러 오류
 - 문제 상황
     - JSON 샘플 데이터를 디코딩 시 여러 상황의 오류를 접하였는데 어떤 오류인지 파악하는 시간이 오래 걸렸고, 그로 인해 그 오류를 해결하는 시간이 오래 걸리게 되어 개발 효율이 떨어졌습니다.   
@@ -63,7 +63,7 @@
     - 첫 번째 화면과, 세 번째 화면의 경우 보여줘야 하는 셀의 수와 구조가 정해져 있기 때문에 `Static Cells` 타입을 선택했고, 두 번째 화면 같은 경우 여러 셀이 동일한 레이아웃을 사용하기 때문에 `Dynamic Prototypes` 타입을 선택하였습니다.   
 |첫 번째 뷰|세 번째 뷰|두 번째 뷰|
 |---|---|---|
-|<img src="https://github.com/zziro95/ios-exposition-universelle/tree/step3/images/firstView.png" width="70%" height="70%" title="firstView" alt="firstView"></img>|<img src="https://github.com/zziro95/ios-exposition-universelle/tree/step3/images/appgif.gif" width="70%" height="70%" title="appgif" alt="appgif"></img>|<img src="https://github.com/zziro95/ios-exposition-universelle/tree/step3/images/appgif.gif" width="70%" height="70%" title="appgif" alt="appgif"></img>|   
+|<img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/firstView.png" width="70%" height="70%" title="firstView" alt="firstView"></img>|<img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/thirdView.png" width="70%" height="70%" title="thirdView" alt="thirdView"></img>|<img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/secondView.png" width="70%" height="70%" title="secondView" alt="secondView"></img>|   
 <br>
 
 ### 3. 화면전환 시 데이터 넘겨주는 방법
@@ -82,12 +82,12 @@
     - [해당 내용 커밋](https://github.com/yagom-academy/ios-exposition-universelle/pull/14/commits/79c6ceaafa247f24349d135a2e8bf5cf732083e8)
     
 ---
-## 고민한 점
+## 💡 고민한 점
 ### 프로퍼티의 네이밍과 타입, 옵셔널 처리
 - 문제 상황
     - 처음에 `Exposition` 타입을 정의할 때 `titleImage`라는 프로퍼티명과 `String` 타입을 선택하였습니다.   
     - PR 요청 후 리뷰 과정에서 아래와 같은 리뷰를 받게 되었습니다.     
-<img src="https://github.com/zziro95/ios-exposition-universelle/tree/step3/images/Exposition_Universelle_Review1.png" width="70%" height="70%" title="Exposition_Universelle_Review1" alt="Exposition_Universelle_Review1Img"></img> <br>
+<img src="https://github.com/zziro95/ios-exposition-universelle/blob/step3/images/Exposition_Universelle_Review1.png" width="70%" height="70%" title="Exposition_Universelle_Review1" alt="Exposition_Universelle_Review1Img"></img> <br>
 
 - 고민 과정
     - JSON 샘플 데이터에 매칭하는 것에 대해서만 신경 쓰고 이 프로퍼티가 어디로 호출될 것이고, 어떻게 사용될지에 대한 고민이 부족했다고 생각이 들었습니다.   
